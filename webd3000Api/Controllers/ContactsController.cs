@@ -69,7 +69,7 @@ namespace webd3000Api.Controllers
             string message = JsonSerializer.Serialize(contact);
 
             // send string message to queue
-            await queueClient.SendMessageAsync("Hello from my ASP.NET app!!!");
+            await queueClient.SendMessageAsync(message);
 
 
 
